@@ -76,7 +76,7 @@ textarea::placeholder {
     margin-right: 10px;
 }
 
-.buttonhowtouse {
+.howtouse {
     border: none;
     padding: 5px;
     border-radius: 5px;
@@ -85,6 +85,7 @@ textarea::placeholder {
     background-color: green;
     font-weight: bold;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .register {

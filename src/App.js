@@ -97,8 +97,8 @@ function App() {
               latitude={p.lat}
               longitude={p.long}
               offsetLeft={-viewport.zoom * 3.5}
-              offsetTop={-viewport.zoom * 7}>
-
+              offsetTop={-viewport.zoom * 7}
+            >
               <Room style={{ fontSize: viewport.zoom * 7, color: p.username === currentUser ? "tomato" : "slateblue", cursor: "pointer" }} onClick={() => handleMarkerClick(p._id, p.lat, p.long)} />
             </Marker>
             {p._id === currentPlaceId && (
@@ -155,7 +155,7 @@ function App() {
             </div>
           </Popup>)
         }
-        <button className="buttonhowtouse" onClick={() => setShowHowToUse(true)}>How To Use?</button>
+        <button className="button howtouse" onClick={() => setShowHowToUse(true)}>Message For My Baby Doll</button>
         {currentUser ? (<button className="button logout" onClick={handleLogout}>Log Out</button>) : (
           <div className="buttons">
             <button className="button login" onClick={() => setShowLogin(true)}>Login</button>
