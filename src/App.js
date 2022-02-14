@@ -67,7 +67,6 @@ function App() {
     }
 
     try {
-
       const res = await axios.post("/pins", newPin)
       setPins([...pins, res.data]);
       setNewPlace(null);
@@ -125,7 +124,7 @@ function App() {
                   <span className="date">{format(p.createdAt)}</span>
                 </div>
               </Popup>
-            )})
+            )}
           </>
         ))}
         {newPlace &&
